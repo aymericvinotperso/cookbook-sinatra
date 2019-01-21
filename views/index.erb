@@ -1,0 +1,9 @@
+<% @cookbook.recipes.each_with_index do |recipe, index| %>
+  <ul>
+    <li>
+      <%= recipe.name %> <a href="/destroy/<%= index %>">destroy</a>
+    </li>
+  </ul>
+<% end %>
+
+<a href="/new">New</a>
